@@ -59,9 +59,9 @@ class ImageComposer7:
             self.draw_alerts(context)
             self.draw_stats(context)
             # Save out as bytestream
-            output = BytesIO()
-            surface.write_to_png(output)
-            return output
+            #output = BytesIO()
+            surface.write_to_png("letest.png")
+            #return output
 
     def draw_date(self, context: cairo.Context):
         now = datetime.datetime.now(self.timezone)
