@@ -30,9 +30,15 @@ python3 /home/pi/image.py /home/pi/weather.png
 
 Get the software:
 ```
+apt install git python3-pip python3-numpy libcairo2 libopenjp2-7 libtiff5
+python3 -m pip install pytz pycairo Pillow inky[rpi,fonts]
 cd ~
 git clone https://github.com/fliiiix/weatherboard.git weatherboard-cron
 
 wget https://raw.githubusercontent.com/pimoroni/inky/master/examples/7color/clear.py
 wget https://raw.githubusercontent.com/pimoroni/inky/master/examples/7color/image.py 
+
+# enable spi
+sudo raspi-config
+sudo reboot
 ```
