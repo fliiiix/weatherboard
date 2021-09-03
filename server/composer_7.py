@@ -60,7 +60,7 @@ class ImageComposer7:
             self.draw_stats(context)
             # Save out as bytestream
             #output = BytesIO()
-            surface.write_to_png("letest.png")
+            surface.write_to_png("weather.png")
             #return output
 
     def draw_date(self, context: cairo.Context):
